@@ -1,0 +1,1808 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='death percentage by total cases+ (covid ka project bnaane lge)' inline='true' name='federated.1oiaxbv00tz7ai1anj9c40il5z6i' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='covid ka project bnaane lge' name='excel-direct.1lxoj651c8eqbl1ez02i71rb2nls'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/hp/Desktop/covid ka project bnaane lge.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='excel-direct.1lxoj651c8eqbl1ez02i71rb2nls' name='death percentage by total cases' table='[&apos;death percentage by total cases$&apos;]' type='table'>
+            <columns gridOrigin='A1:B211:no:A1:B211:0' header='yes' outcome='2'>
+              <column datatype='string' name='location' ordinal='0' />
+              <column datatype='string' name='death_percentage_by_countries' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1lxoj651c8eqbl1ez02i71rb2nls' name='Death rate by population' table='[&apos;Death rate by population$&apos;]' type='table'>
+            <columns gridOrigin='A1:B211:no:A1:B211:0' header='yes' outcome='2'>
+              <column datatype='string' name='location' ordinal='0' />
+              <column datatype='string' name='death_rate_by_countries_population' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1lxoj651c8eqbl1ez02i71rb2nls' name=' deah % by total cases' table='[&apos; deah % by total cases$&apos;]' type='table'>
+            <columns gridOrigin='A1:E10001:no:A1:E10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='location' ordinal='0' />
+              <column datatype='date' name='date' ordinal='1' />
+              <column datatype='integer' name='total_cases' ordinal='2' />
+              <column datatype='string' name='total_deaths' ordinal='3' />
+              <column datatype='string' name='death_percentage_dates' ordinal='4' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[date]' value='[ deah % by total cases].[date]' />
+          <map key='[death_percentage_by_countries]' value='[death percentage by total cases].[death_percentage_by_countries]' />
+          <map key='[death_percentage_dates]' value='[ deah % by total cases].[death_percentage_dates]' />
+          <map key='[death_rate_by_countries_population]' value='[Death rate by population].[death_rate_by_countries_population]' />
+          <map key='[location ( deah % by total cases)]' value='[ deah % by total cases].[location]' />
+          <map key='[location (Death rate by population)]' value='[Death rate by population].[location]' />
+          <map key='[location]' value='[death percentage by total cases].[location]' />
+          <map key='[total_cases]' value='[ deah % by total cases].[total_cases]' />
+          <map key='[total_deaths]' value='[ deah % by total cases].[total_deaths]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[death percentage by total cases]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B211:no:A1:B211:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Death rate by population]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B211:no:A1:B211:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ deah % by total cases]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E10001:no:A1:E10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[death percentage by total cases]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[death percentage by total cases_A04EB52E02D4422E804A48142DE12917]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>death_percentage_by_countries</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[death_percentage_by_countries]</local-name>
+            <parent-name>[death percentage by total cases]</parent-name>
+            <remote-alias>death_percentage_by_countries</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[death percentage by total cases_A04EB52E02D4422E804A48142DE12917]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[location (Death rate by population)]</local-name>
+            <parent-name>[Death rate by population]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Death rate by population_9831E1ABA00748E0B5746891F144160A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>death_rate_by_countries_population</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[death_rate_by_countries_population]</local-name>
+            <parent-name>[Death rate by population]</parent-name>
+            <remote-alias>death_rate_by_countries_population</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Death rate by population_9831E1ABA00748E0B5746891F144160A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[location ( deah % by total cases)]</local-name>
+            <parent-name>[ deah % by total cases]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[ deah % by total cases]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_cases]</local-name>
+            <parent-name>[ deah % by total cases]</parent-name>
+            <remote-alias>total_cases</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_deaths</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[total_deaths]</local-name>
+            <parent-name>[ deah % by total cases]</parent-name>
+            <remote-alias>total_deaths</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>death_percentage_dates</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[death_percentage_dates]</local-name>
+            <parent-name>[ deah % by total cases]</parent-name>
+            <remote-alias>death_percentage_dates</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption=' deah % by total cases' datatype='table' name='[__tableau_internal_object_id__].[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]' role='measure' type='quantitative' />
+      <column caption='Death rate by population' datatype='table' name='[__tableau_internal_object_id__].[Death rate by population_9831E1ABA00748E0B5746891F144160A]' role='measure' type='quantitative' />
+      <column caption='death percentage by total cases' datatype='table' name='[__tableau_internal_object_id__].[death percentage by total cases_A04EB52E02D4422E804A48142DE12917]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Death Percentage By Countries' datatype='string' name='[death_percentage_by_countries]' role='dimension' type='nominal' />
+      <column caption='Death Percentage Dates' datatype='string' name='[death_percentage_dates]' role='dimension' type='nominal' />
+      <column caption='Death Rate By Countries Population' datatype='string' name='[death_rate_by_countries_population]' role='dimension' type='nominal' />
+      <column caption='Location ( Deah % By Total Cases)' datatype='string' name='[location ( deah % by total cases)]' role='dimension' type='nominal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column caption='Total Cases' datatype='integer' name='[total_cases]' role='measure' type='quantitative' />
+      <column caption='Total Deaths' datatype='string' name='[total_deaths]' role='dimension' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hp/AppData/Local/Temp/TableauTemp/#TableauTemp_1r3azxw1fxxgt811m964l0sd1vat.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/15/2025 06:28:54 AM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='death percentage by total cases_A04EB52E02D4422E804A48142DE12917' table='[Extract].[death percentage by total cases_A04EB52E02D4422E804A48142DE12917]' type='table' />
+            <relation name='Death rate by population_9831E1ABA00748E0B5746891F144160A' table='[Extract].[Death rate by population_9831E1ABA00748E0B5746891F144160A]' type='table' />
+            <relation name=' deah % by total cases_ABA0357D68864130909D2B32F42153FD' table='[Extract].[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]' type='table' />
+          </relation>
+          <cols>
+            <map key='[date]' value='[ deah % by total cases_ABA0357D68864130909D2B32F42153FD].[date]' />
+            <map key='[death_percentage_by_countries]' value='[death percentage by total cases_A04EB52E02D4422E804A48142DE12917].[death_percentage_by_countries]' />
+            <map key='[death_percentage_dates]' value='[ deah % by total cases_ABA0357D68864130909D2B32F42153FD].[death_percentage_dates]' />
+            <map key='[death_rate_by_countries_population]' value='[Death rate by population_9831E1ABA00748E0B5746891F144160A].[death_rate_by_countries_population]' />
+            <map key='[location ( deah % by total cases)]' value='[ deah % by total cases_ABA0357D68864130909D2B32F42153FD].[location]' />
+            <map key='[location (Death rate by population)]' value='[Death rate by population_9831E1ABA00748E0B5746891F144160A].[location]' />
+            <map key='[location]' value='[death percentage by total cases_A04EB52E02D4422E804A48142DE12917].[location]' />
+            <map key='[total_cases]' value='[ deah % by total cases_ABA0357D68864130909D2B32F42153FD].[total_cases]' />
+            <map key='[total_deaths]' value='[ deah % by total cases_ABA0357D68864130909D2B32F42153FD].[total_deaths]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[location]</local-name>
+              <parent-name>[death percentage by total cases_A04EB52E02D4422E804A48142DE12917]</parent-name>
+              <remote-alias>location</remote-alias>
+              <ordinal>0</ordinal>
+              <family>death percentage by total cases</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>210</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[death percentage by total cases_A04EB52E02D4422E804A48142DE12917]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>death_percentage_by_countries</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[death_percentage_by_countries]</local-name>
+              <parent-name>[death percentage by total cases_A04EB52E02D4422E804A48142DE12917]</parent-name>
+              <remote-alias>death_percentage_by_countries</remote-alias>
+              <ordinal>1</ordinal>
+              <family>death percentage by total cases</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>161</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[death percentage by total cases_A04EB52E02D4422E804A48142DE12917]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[location (Death rate by population)]</local-name>
+              <parent-name>[Death rate by population_9831E1ABA00748E0B5746891F144160A]</parent-name>
+              <remote-alias>location</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Death rate by population</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>210</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Death rate by population_9831E1ABA00748E0B5746891F144160A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>death_rate_by_countries_population</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[death_rate_by_countries_population]</local-name>
+              <parent-name>[Death rate by population_9831E1ABA00748E0B5746891F144160A]</parent-name>
+              <remote-alias>death_rate_by_countries_population</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Death rate by population</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[Death rate by population_9831E1ABA00748E0B5746891F144160A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[location ( deah % by total cases)]</local-name>
+              <parent-name>[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]</parent-name>
+              <remote-alias>location</remote-alias>
+              <ordinal>4</ordinal>
+              <family> deah % by total cases</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>302</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>5</ordinal>
+              <family> deah % by total cases</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1274</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_cases</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_cases]</local-name>
+              <parent-name>[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]</parent-name>
+              <remote-alias>total_cases</remote-alias>
+              <ordinal>6</ordinal>
+              <family> deah % by total cases</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17409</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_deaths</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[total_deaths]</local-name>
+              <parent-name>[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]</parent-name>
+              <remote-alias>total_deaths</remote-alias>
+              <ordinal>7</ordinal>
+              <family> deah % by total cases</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5831</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>death_percentage_dates</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[death_percentage_dates]</local-name>
+              <parent-name>[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]</parent-name>
+              <remote-alias>death_percentage_dates</remote-alias>
+              <ordinal>8</ordinal>
+              <family> deah % by total cases</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2238</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption=' deah % by total cases' id=' deah % by total cases_ABA0357D68864130909D2B32F42153FD'>
+            <properties context=''>
+              <relation connection='excel-direct.1lxoj651c8eqbl1ez02i71rb2nls' name=' deah % by total cases' table='[&apos; deah % by total cases$&apos;]' type='table'>
+                <columns gridOrigin='A1:E10001:no:A1:E10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='location' ordinal='0' />
+                  <column datatype='date' name='date' ordinal='1' />
+                  <column datatype='integer' name='total_cases' ordinal='2' />
+                  <column datatype='string' name='total_deaths' ordinal='3' />
+                  <column datatype='string' name='death_percentage_dates' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name=' deah % by total cases_ABA0357D68864130909D2B32F42153FD' table='[Extract].[ deah % by total cases_ABA0357D68864130909D2B32F42153FD]' type='table' />
+            </properties>
+          </object>
+          <object caption='Death rate by population' id='Death rate by population_9831E1ABA00748E0B5746891F144160A'>
+            <properties context=''>
+              <relation connection='excel-direct.1lxoj651c8eqbl1ez02i71rb2nls' name='Death rate by population' table='[&apos;Death rate by population$&apos;]' type='table'>
+                <columns gridOrigin='A1:B211:no:A1:B211:0' header='yes' outcome='2'>
+                  <column datatype='string' name='location' ordinal='0' />
+                  <column datatype='string' name='death_rate_by_countries_population' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Death rate by population_9831E1ABA00748E0B5746891F144160A' table='[Extract].[Death rate by population_9831E1ABA00748E0B5746891F144160A]' type='table' />
+            </properties>
+          </object>
+          <object caption='death percentage by total cases' id='death percentage by total cases_A04EB52E02D4422E804A48142DE12917'>
+            <properties context=''>
+              <relation connection='excel-direct.1lxoj651c8eqbl1ez02i71rb2nls' name='death percentage by total cases' table='[&apos;death percentage by total cases$&apos;]' type='table'>
+                <columns gridOrigin='A1:B211:no:A1:B211:0' header='yes' outcome='2'>
+                  <column datatype='string' name='location' ordinal='0' />
+                  <column datatype='string' name='death_percentage_by_countries' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='death percentage by total cases_A04EB52E02D4422E804A48142DE12917' table='[Extract].[death percentage by total cases_A04EB52E02D4422E804A48142DE12917]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[location (Death rate by population)]' />
+              <expression op='[location ( deah % by total cases)]' />
+            </expression>
+            <first-end-point object-id='Death rate by population_9831E1ABA00748E0B5746891F144160A' />
+            <second-end-point object-id=' deah % by total cases_ABA0357D68864130909D2B32F42153FD' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[location]' />
+              <expression op='[location (Death rate by population)]' />
+            </expression>
+            <first-end-point object-id='death percentage by total cases_A04EB52E02D4422E804A48142DE12917' />
+            <second-end-point object-id='Death rate by population_9831E1ABA00748E0B5746891F144160A' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+    <datasource caption='new cases study' inline='true' name='federated.00041nm0iz599e12rvayv0151dzk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='covid ka project bnaane lge' name='excel-direct.1rphgpj0st75rv0zw4lt11p0b6sb'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/hp/Desktop/covid ka project bnaane lge.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='excel-direct.1rphgpj0st75rv0zw4lt11p0b6sb' name=' Average infection rate via cou' table='[&apos; Average infection rate via cou$&apos;]' type='table'>
+            <columns gridOrigin='A1:B211:no:A1:B211:0' header='yes' outcome='2'>
+              <column datatype='string' name='location' ordinal='0' />
+              <column datatype='string' name='Infection_rate_by_countries' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1rphgpj0st75rv0zw4lt11p0b6sb' name=' New cases %' table='[&apos; New cases %$&apos;]' type='table'>
+            <columns gridOrigin='A1:F10001:no:A1:F10001:0' header='yes' outcome='2'>
+              <column datatype='string' name='continent' ordinal='0' />
+              <column datatype='string' name='location' ordinal='1' />
+              <column datatype='date' name='date' ordinal='2' />
+              <column datatype='integer' name='population' ordinal='3' />
+              <column datatype='string' name='total_cases' ordinal='4' />
+              <column datatype='string' name='total_deaths' ordinal='5' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1rphgpj0st75rv0zw4lt11p0b6sb' name=' Average infection rate via cou1' table='[&apos; Average infection rate via cou$&apos;]' type='table'>
+            <columns gridOrigin='A1:B211:no:A1:B211:0' header='yes' outcome='2'>
+              <column datatype='string' name='location' ordinal='0' />
+              <column datatype='string' name='Infection_rate_by_countries' ordinal='1' />
+            </columns>
+          </relation>
+          <relation connection='excel-direct.1rphgpj0st75rv0zw4lt11p0b6sb' name='New cases avg growthrate loc ' table='[&apos;New cases avg growthrate loc $&apos;]' type='table'>
+            <columns gridOrigin='A1:B211:no:A1:B211:0' header='yes' outcome='2'>
+              <column datatype='string' name='location' ordinal='0' />
+              <column datatype='string' name='new_cases_percentage' ordinal='1' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[Infection_rate_by_countries ( Average infection rate via cou1)]' value='[ Average infection rate via cou1].[Infection_rate_by_countries]' />
+          <map key='[Infection_rate_by_countries]' value='[ Average infection rate via cou].[Infection_rate_by_countries]' />
+          <map key='[continent]' value='[ New cases %].[continent]' />
+          <map key='[date]' value='[ New cases %].[date]' />
+          <map key='[location ( Average infection rate via cou1)]' value='[ Average infection rate via cou1].[location]' />
+          <map key='[location ( New cases %)]' value='[ New cases %].[location]' />
+          <map key='[location (New cases avg growthrate loc )]' value='[New cases avg growthrate loc ].[location]' />
+          <map key='[location]' value='[ Average infection rate via cou].[location]' />
+          <map key='[new_cases_percentage]' value='[New cases avg growthrate loc ].[new_cases_percentage]' />
+          <map key='[population]' value='[ New cases %].[population]' />
+          <map key='[total_cases]' value='[ New cases %].[total_cases]' />
+          <map key='[total_deaths]' value='[ New cases %].[total_deaths]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ Average infection rate via cou]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B211:no:A1:B211:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ New cases %]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F10001:no:A1:F10001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[ Average infection rate via cou1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B211:no:A1:B211:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[New cases avg growthrate loc ]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:B211:no:A1:B211:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[ Average infection rate via cou]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ Average infection rate via cou_CDC48C33A2BE40A8A4D513B7F8ED96CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Infection_rate_by_countries</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Infection_rate_by_countries]</local-name>
+            <parent-name>[ Average infection rate via cou]</parent-name>
+            <remote-alias>Infection_rate_by_countries</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ Average infection rate via cou_CDC48C33A2BE40A8A4D513B7F8ED96CC]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>continent</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[continent]</local-name>
+            <parent-name>[ New cases %]</parent-name>
+            <remote-alias>continent</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[location ( New cases %)]</local-name>
+            <parent-name>[ New cases %]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[ New cases %]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <object-id>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[population]</local-name>
+            <parent-name>[ New cases %]</parent-name>
+            <remote-alias>population</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_cases</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[total_cases]</local-name>
+            <parent-name>[ New cases %]</parent-name>
+            <remote-alias>total_cases</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_deaths</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[total_deaths]</local-name>
+            <parent-name>[ New cases %]</parent-name>
+            <remote-alias>total_deaths</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[location ( Average infection rate via cou1)]</local-name>
+            <parent-name>[ Average infection rate via cou1]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ Average infection rate via cou_BE17B6CE0F8C4023BBA05DDCC0EBC561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Infection_rate_by_countries</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Infection_rate_by_countries ( Average infection rate via cou1)]</local-name>
+            <parent-name>[ Average infection rate via cou1]</parent-name>
+            <remote-alias>Infection_rate_by_countries</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[ Average infection rate via cou_BE17B6CE0F8C4023BBA05DDCC0EBC561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[location (New cases avg growthrate loc )]</local-name>
+            <parent-name>[New cases avg growthrate loc ]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[New cases avg growthrate loc _743D1C4763214CFEAE032D3563ACCFF0]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_cases_percentage</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[new_cases_percentage]</local-name>
+            <parent-name>[New cases avg growthrate loc ]</parent-name>
+            <remote-alias>new_cases_percentage</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RIN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[New cases avg growthrate loc _743D1C4763214CFEAE032D3563ACCFF0]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Infection rate by countries ( Average infection rate via cou1)' datatype='string' name='[Infection_rate_by_countries ( Average infection rate via cou1)]' role='dimension' type='nominal' />
+      <column caption='Infection rate by countries' datatype='string' name='[Infection_rate_by_countries]' role='dimension' type='nominal' />
+      <column caption=' Average infection rate via cou1' datatype='table' name='[__tableau_internal_object_id__].[ Average infection rate via cou_BE17B6CE0F8C4023BBA05DDCC0EBC561]' role='measure' type='quantitative' />
+      <column caption=' Average infection rate via cou' datatype='table' name='[__tableau_internal_object_id__].[ Average infection rate via cou_CDC48C33A2BE40A8A4D513B7F8ED96CC]' role='measure' type='quantitative' />
+      <column caption=' New cases %' datatype='table' name='[__tableau_internal_object_id__].[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]' role='measure' type='quantitative' />
+      <column caption='New cases avg growthrate loc ' datatype='table' name='[__tableau_internal_object_id__].[New cases avg growthrate loc _743D1C4763214CFEAE032D3563ACCFF0]' role='measure' type='quantitative' />
+      <column caption='Continent' datatype='string' name='[continent]' role='dimension' type='nominal' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column caption='New Cases Percentage' datatype='string' name='[new_cases_percentage]' role='dimension' type='nominal' />
+      <column caption='Population' datatype='integer' name='[population]' role='measure' type='quantitative' />
+      <column aggregation='CountD' caption='Total Cases' datatype='integer' datatype-customized='true' name='[total_cases]' role='measure' type='quantitative' />
+      <column caption='Total Deaths' datatype='string' name='[total_deaths]' role='dimension' type='nominal' />
+      <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hp/AppData/Local/Temp/TableauTemp/#TableauTemp_1yjmnst1kbeqmi1e0khsf18nvpqg.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/15/2025 06:27:44 AM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name=' Average infection rate via cou_CDC48C33A2BE40A8A4D513B7F8ED96CC' table='[Extract].[ Average infection rate via cou_CDC48C33A2BE40A8A4D513B7F8ED96CC]' type='table' />
+            <relation name=' New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B' table='[Extract].[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]' type='table' />
+            <relation name=' Average infection rate via cou_BE17B6CE0F8C4023BBA05DDCC0EBC561' table='[Extract].[ Average infection rate via cou_BE17B6CE0F8C4023BBA05DDCC0EBC561]' type='table' />
+            <relation name='New cases avg growthrate loc _743D1C4763214CFEAE032D3563ACCFF0' table='[Extract].[New cases avg growthrate loc _743D1C4763214CFEAE032D3563ACCFF0]' type='table' />
+          </relation>
+          <cols>
+            <map key='[Infection_rate_by_countries ( Average infection rate via cou1)]' value='[ Average infection rate via cou_BE17B6CE0F8C4023BBA05DDCC0EBC561].[Infection_rate_by_countries]' />
+            <map key='[Infection_rate_by_countries]' value='[ Average infection rate via cou_CDC48C33A2BE40A8A4D513B7F8ED96CC].[Infection_rate_by_countries]' />
+            <map key='[continent]' value='[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B].[continent]' />
+            <map key='[date]' value='[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B].[date]' />
+            <map key='[location ( Average infection rate via cou1)]' value='[ Average infection rate via cou_BE17B6CE0F8C4023BBA05DDCC0EBC561].[location]' />
+            <map key='[location ( New cases %)]' value='[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B].[location]' />
+            <map key='[location (New cases avg growthrate loc )]' value='[New cases avg growthrate loc _743D1C4763214CFEAE032D3563ACCFF0].[location]' />
+            <map key='[location]' value='[ Average infection rate via cou_CDC48C33A2BE40A8A4D513B7F8ED96CC].[location]' />
+            <map key='[new_cases_percentage]' value='[New cases avg growthrate loc _743D1C4763214CFEAE032D3563ACCFF0].[new_cases_percentage]' />
+            <map key='[population]' value='[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B].[population]' />
+            <map key='[total_cases]' value='[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B].[total_cases]' />
+            <map key='[total_deaths]' value='[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B].[total_deaths]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[location]</local-name>
+              <parent-name>[ Average infection rate via cou_CDC48C33A2BE40A8A4D513B7F8ED96CC]</parent-name>
+              <remote-alias>location</remote-alias>
+              <ordinal>0</ordinal>
+              <family> Average infection rate via cou</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>210</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[ Average infection rate via cou_CDC48C33A2BE40A8A4D513B7F8ED96CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Infection_rate_by_countries</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Infection_rate_by_countries]</local-name>
+              <parent-name>[ Average infection rate via cou_CDC48C33A2BE40A8A4D513B7F8ED96CC]</parent-name>
+              <remote-alias>Infection_rate_by_countries</remote-alias>
+              <ordinal>1</ordinal>
+              <family> Average infection rate via cou</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>113</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[ Average infection rate via cou_CDC48C33A2BE40A8A4D513B7F8ED96CC]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>continent</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[continent]</local-name>
+              <parent-name>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</parent-name>
+              <remote-alias>continent</remote-alias>
+              <ordinal>2</ordinal>
+              <family> New cases %</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[location ( New cases %)]</local-name>
+              <parent-name>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</parent-name>
+              <remote-alias>location</remote-alias>
+              <ordinal>3</ordinal>
+              <family> New cases %</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>319</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date]</local-name>
+              <parent-name>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</parent-name>
+              <remote-alias>date</remote-alias>
+              <ordinal>4</ordinal>
+              <family> New cases %</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1302</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[population]</local-name>
+              <parent-name>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</parent-name>
+              <remote-alias>population</remote-alias>
+              <ordinal>5</ordinal>
+              <family> New cases %</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>319</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_cases</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[total_cases]</local-name>
+              <parent-name>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</parent-name>
+              <remote-alias>total_cases</remote-alias>
+              <ordinal>6</ordinal>
+              <family> New cases %</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17369</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_deaths</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[total_deaths]</local-name>
+              <parent-name>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</parent-name>
+              <remote-alias>total_deaths</remote-alias>
+              <ordinal>7</ordinal>
+              <family> New cases %</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5820</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[location ( Average infection rate via cou1)]</local-name>
+              <parent-name>[ Average infection rate via cou_BE17B6CE0F8C4023BBA05DDCC0EBC561]</parent-name>
+              <remote-alias>location</remote-alias>
+              <ordinal>8</ordinal>
+              <family> Average infection rate via cou1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>210</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[ Average infection rate via cou_BE17B6CE0F8C4023BBA05DDCC0EBC561]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Infection_rate_by_countries</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Infection_rate_by_countries ( Average infection rate via cou1)]</local-name>
+              <parent-name>[ Average infection rate via cou_BE17B6CE0F8C4023BBA05DDCC0EBC561]</parent-name>
+              <remote-alias>Infection_rate_by_countries</remote-alias>
+              <ordinal>9</ordinal>
+              <family> Average infection rate via cou1</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>113</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[ Average infection rate via cou_BE17B6CE0F8C4023BBA05DDCC0EBC561]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[location (New cases avg growthrate loc )]</local-name>
+              <parent-name>[New cases avg growthrate loc _743D1C4763214CFEAE032D3563ACCFF0]</parent-name>
+              <remote-alias>location</remote-alias>
+              <ordinal>10</ordinal>
+              <family>New cases avg growthrate loc </family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>210</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[New cases avg growthrate loc _743D1C4763214CFEAE032D3563ACCFF0]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>new_cases_percentage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[new_cases_percentage]</local-name>
+              <parent-name>[New cases avg growthrate loc _743D1C4763214CFEAE032D3563ACCFF0]</parent-name>
+              <remote-alias>new_cases_percentage</remote-alias>
+              <ordinal>11</ordinal>
+              <family>New cases avg growthrate loc </family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>191</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RIN_S2' />
+              <object-id>[New cases avg growthrate loc _743D1C4763214CFEAE032D3563ACCFF0]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:location:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;United Arab Emirates&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Iran&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Russia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption=' Average infection rate via cou1' id=' Average infection rate via cou_BE17B6CE0F8C4023BBA05DDCC0EBC561'>
+            <properties context=''>
+              <relation connection='excel-direct.1rphgpj0st75rv0zw4lt11p0b6sb' name=' Average infection rate via cou1' table='[&apos; Average infection rate via cou$&apos;]' type='table'>
+                <columns gridOrigin='A1:B211:no:A1:B211:0' header='yes' outcome='2'>
+                  <column datatype='string' name='location' ordinal='0' />
+                  <column datatype='string' name='Infection_rate_by_countries' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name=' Average infection rate via cou_BE17B6CE0F8C4023BBA05DDCC0EBC561' table='[Extract].[ Average infection rate via cou_BE17B6CE0F8C4023BBA05DDCC0EBC561]' type='table' />
+            </properties>
+          </object>
+          <object caption=' Average infection rate via cou' id=' Average infection rate via cou_CDC48C33A2BE40A8A4D513B7F8ED96CC'>
+            <properties context=''>
+              <relation connection='excel-direct.1rphgpj0st75rv0zw4lt11p0b6sb' name=' Average infection rate via cou' table='[&apos; Average infection rate via cou$&apos;]' type='table'>
+                <columns gridOrigin='A1:B211:no:A1:B211:0' header='yes' outcome='2'>
+                  <column datatype='string' name='location' ordinal='0' />
+                  <column datatype='string' name='Infection_rate_by_countries' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name=' Average infection rate via cou_CDC48C33A2BE40A8A4D513B7F8ED96CC' table='[Extract].[ Average infection rate via cou_CDC48C33A2BE40A8A4D513B7F8ED96CC]' type='table' />
+            </properties>
+          </object>
+          <object caption=' New cases %' id=' New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B'>
+            <properties context=''>
+              <relation connection='excel-direct.1rphgpj0st75rv0zw4lt11p0b6sb' name=' New cases %' table='[&apos; New cases %$&apos;]' type='table'>
+                <columns gridOrigin='A1:F10001:no:A1:F10001:0' header='yes' outcome='2'>
+                  <column datatype='string' name='continent' ordinal='0' />
+                  <column datatype='string' name='location' ordinal='1' />
+                  <column datatype='date' name='date' ordinal='2' />
+                  <column datatype='integer' name='population' ordinal='3' />
+                  <column datatype='string' name='total_cases' ordinal='4' />
+                  <column datatype='string' name='total_deaths' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name=' New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B' table='[Extract].[ New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B]' type='table' />
+            </properties>
+          </object>
+          <object caption='New cases avg growthrate loc ' id='New cases avg growthrate loc _743D1C4763214CFEAE032D3563ACCFF0'>
+            <properties context=''>
+              <relation connection='excel-direct.1rphgpj0st75rv0zw4lt11p0b6sb' name='New cases avg growthrate loc ' table='[&apos;New cases avg growthrate loc $&apos;]' type='table'>
+                <columns gridOrigin='A1:B211:no:A1:B211:0' header='yes' outcome='2'>
+                  <column datatype='string' name='location' ordinal='0' />
+                  <column datatype='string' name='new_cases_percentage' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='New cases avg growthrate loc _743D1C4763214CFEAE032D3563ACCFF0' table='[Extract].[New cases avg growthrate loc _743D1C4763214CFEAE032D3563ACCFF0]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[location ( New cases %)]' />
+              <expression op='[location ( Average infection rate via cou1)]' />
+            </expression>
+            <first-end-point object-id=' New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B' />
+            <second-end-point object-id=' Average infection rate via cou_BE17B6CE0F8C4023BBA05DDCC0EBC561' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[location]' />
+              <expression op='[location ( New cases %)]' />
+            </expression>
+            <first-end-point object-id=' Average infection rate via cou_CDC48C33A2BE40A8A4D513B7F8ED96CC' />
+            <second-end-point object-id=' New cases %_2C7A3CAC0297448E9DCC4C6D441CA01B' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[location ( Average infection rate via cou1)]' />
+              <expression op='[location (New cases avg growthrate loc )]' />
+            </expression>
+            <first-end-point object-id=' Average infection rate via cou_BE17B6CE0F8C4023BBA05DDCC0EBC561' />
+            <second-end-point object-id='New cases avg growthrate loc _743D1C4763214CFEAE032D3563ACCFF0' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_7A78CE717F3D43D9A02180A01695CC8D]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 2' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Location' />
+        <param name='target' value='Sheet 2' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total cases by countries</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='new cases study' name='federated.00041nm0iz599e12rvayv0151dzk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00041nm0iz599e12rvayv0151dzk'>
+            <column-instance column='[total_cases]' derivation='Avg' name='[avg:total_cases:qk]' pivot='key' type='quantitative' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+            <column aggregation='CountD' caption='Total Cases' datatype='integer' datatype-customized='true' name='[total_cases]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;Australia&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;Canada&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;China&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;Pakistan&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;Russia&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;United Arab Emirates&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;United States&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.00041nm0iz599e12rvayv0151dzk].[avg:total_cases:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]' value='115' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.00041nm0iz599e12rvayv0151dzk].[avg:total_cases:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.00041nm0iz599e12rvayv0151dzk].[avg:total_cases:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.00041nm0iz599e12rvayv0151dzk].[avg:total_cases:qk] + [federated.00041nm0iz599e12rvayv0151dzk].[avg:total_cases:qk])</rows>
+        <cols>[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]</cols>
+      </table>
+      <simple-id uuid='{ABE020DB-38B3-419E-B70E-29ED7E28F73C}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='new cases study' name='federated.00041nm0iz599e12rvayv0151dzk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00041nm0iz599e12rvayv0151dzk'>
+            <column-instance column='[total_cases]' derivation='Avg' name='[avg:total_cases:qk]' pivot='key' type='quantitative' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+            <column aggregation='CountD' caption='Total Cases' datatype='integer' datatype-customized='true' name='[total_cases]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;Australia&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;Canada&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;China&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;Iran&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;Iraq&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;Pakistan&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;United Arab Emirates&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:location:nk]' member='&quot;United States&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='390' />
+            <format attr='width' value='683' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]' />
+              <lod column='[federated.00041nm0iz599e12rvayv0151dzk].[avg:total_cases:qk]' />
+              <wedge-size column='[federated.00041nm0iz599e12rvayv0151dzk].[avg:total_cases:qk]' />
+              <text column='[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ff9da7' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.7251380681991577' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{83D35588-A0F2-427A-8B15-AF3A4C374F7E}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='new cases study' name='federated.00041nm0iz599e12rvayv0151dzk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.00041nm0iz599e12rvayv0151dzk'>
+            <column-instance column='[total_cases]' derivation='Avg' name='[avg:total_cases:qk]' pivot='key' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+            <column-instance column='[location]' derivation='None' name='[none:location:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+            <column aggregation='CountD' caption='Total Cases' datatype='integer' datatype-customized='true' name='[total_cases]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]'>
+            <groupfilter function='member' level='[none:location:nk]' member='&quot;India&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='948' />
+                <format attr='maxwidth' value='948' />
+                <format attr='minheight' value='590' />
+                <format attr='maxheight' value='590' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='948' />
+                <format attr='maxwidth' value='948' />
+                <format attr='minheight' value='590' />
+                <format attr='maxheight' value='590' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.00041nm0iz599e12rvayv0151dzk].[avg:total_cases:qk]</rows>
+        <cols>[federated.00041nm0iz599e12rvayv0151dzk].[tmn:date:qk]</cols>
+      </table>
+      <simple-id uuid='{9C5B43CB-CBAB-4BA9-A451-A50DCCD05A9F}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4F9B7237-7C1F-4A10-AD30-C5C053B7F7B4}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.00041nm0iz599e12rvayv0151dzk].[none:location ( New cases %):nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{04A26689-40A5-475C-8F23-A6F5DB684E79}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.00041nm0iz599e12rvayv0151dzk].[none:location:nk]</field>
+            <field>[federated.00041nm0iz599e12rvayv0151dzk].[yr:date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{165E9053-4F9E-4B7F-8F78-0233EB5CC6DF}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      jvb/AZzX02QPS1EIAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      QmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
